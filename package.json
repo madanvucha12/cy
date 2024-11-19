@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "cypress": "^13.15.2"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
+    "allure-cypress": "^3.0.6",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-xpath": "^2.0.1",
+    "webpack": "^5.96.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-dashboard-run": "npx cypress run --record --key bd559f25-5b3c-4aa1-97bb-c5847ae04908"
+  }
+}

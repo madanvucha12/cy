@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-14T09:06:47.232Z",
+    "end": "2024-11-14T09:07:00.407Z",
+    "duration": 13175,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5cb8139c-706a-41d5-a97e-b4a44fb1985d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\scroll.cy.js",
+      "file": "cypress\\e2e\\scroll.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "32fbb4cc-7a42-4e6e-aa24-7b858136231c",
+          "title": "scroll",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "scroll",
+              "fullTitle": "scroll scroll",
+              "timedOut": null,
+              "duration": 5299,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://www.countries-ofthe-world.com/flags-of-the-world.html');\n// cy.get(\"body > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > table:nth-child(1) > tbody:nth-child(2) > tr:nth-child(86) > td:nth-child(2)\").scrollIntoView()\ncy.get(\":nth-child(1) > tbody > :nth-child(86) > :nth-child(1) > img\").scrollIntoView();",
+              "err": {},
+              "uuid": "2b51db53-c2cc-4d6d-9e4a-acb6615eee66",
+              "parentUUID": "32fbb4cc-7a42-4e6e-aa24-7b858136231c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2b51db53-c2cc-4d6d-9e4a-acb6615eee66"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5299,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-14T09:06:31.703Z",
+    "end": "2024-11-14T09:06:43.804Z",
+    "duration": 12101,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "19243849-5cca-4caa-9906-5e0a5710992a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\mouse.cy.js",
+      "file": "cypress\\e2e\\mouse.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6a9d81a4-2790-402f-86a4-15d8dd2b1268",
+          "title": "mouse drag",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "mouse hover action",
+              "fullTitle": "mouse drag mouse hover action",
+              "timedOut": null,
+              "duration": 6209,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://swisnl.github.io/jQuery-contextMenu/demo.html\");\ncy.get(\".context-menu-one.btn.btn-neutral\").trigger(\"contextmenu\");\ncy.get(\".context-menu-icon-copy > span\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "d745c81d-ae9a-4025-904e-46983657494b",
+              "parentUUID": "6a9d81a4-2790-402f-86a4-15d8dd2b1268",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d745c81d-ae9a-4025-904e-46983657494b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6209,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

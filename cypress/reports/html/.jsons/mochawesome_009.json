@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-14T09:07:12.763Z",
+    "end": "2024-11-14T09:07:13.336Z",
+    "duration": 573,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "25771fee-0036-4ce5-91ec-e8b921a4d937",
+      "title": "",
+      "fullFile": "cypress\\e2e\\API TESTING\\Httpspost2.cy.js",
+      "file": "cypress\\e2e\\API TESTING\\Httpspost2.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f989e348-3519-4e2a-808f-b8fe39d80f6e",
+          "title": "HTTP request",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "POST Call",
+              "fullTitle": "HTTP request POST Call",
+              "timedOut": null,
+              "duration": 456,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var pattern = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\";\nfor (var i = 0; i < 10; i++) randomText += pattern.charAt(Math.floor(Math.random() * pattern.length));\ntestEmail = randomText + \"@gmail.com\";\ncy.request({\n  method: \"POST\",\n  url: \"https://gorest.co.in/public/v2/users\",\n  headers: {\n    authorization: \"Bearer \" + accessToken\n  },\n  body: {\n    name: user.name,\n    email: user.email,\n    gender: user.gender,\n    status: user.status\n  }\n}).then(res => {\n  cy.log(JSON.stringify(res));\n  expect(res.status).to.eq(201);\n  expect(res.body).has.property(\"email\", user.email);\n  expect(res.body).has.property(\"status\", user.status);\n});",
+              "err": {},
+              "uuid": "ab92fff0-80e0-4847-bf2b-aad27cc8b5b8",
+              "parentUUID": "f989e348-3519-4e2a-808f-b8fe39d80f6e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ab92fff0-80e0-4847-bf2b-aad27cc8b5b8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 456,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

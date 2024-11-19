@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-14T09:05:45.747Z",
+    "end": "2024-11-14T09:05:52.488Z",
+    "duration": 6741,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8c0d6ec8-29ec-4fac-a755-43ba69d4d2a1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\draganddrop.cy.js",
+      "file": "cypress\\e2e\\draganddrop.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "55c20ecf-38d3-447d-a4a6-795bd35a7cf8",
+          "title": "templet spec",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "actioncomands",
+              "fullTitle": "templet spec actioncomands",
+              "timedOut": null,
+              "duration": 2978,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html\");\ncy.get(\"#box6\").drag('#box106', {\n  force: true\n});\n// cy.get(\"body > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > table:nth-child(1) > tbody:nth-child(2) > tr:nth-child(86) > td:nth-child(2)\").scrollIntoView()\n//cy.get(\n//\":nth-child(1) > tbody > :nth-child(86) > :nth-child(1) > img\"\n//).scrollIntoView();",
+              "err": {},
+              "uuid": "3eb43d28-a807-415a-b715-0c4b37ed6628",
+              "parentUUID": "55c20ecf-38d3-447d-a4a6-795bd35a7cf8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3eb43d28-a807-415a-b715-0c4b37ed6628"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2978,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

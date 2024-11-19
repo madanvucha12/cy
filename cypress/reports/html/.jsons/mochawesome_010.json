@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-11-14T09:07:16.977Z",
+    "end": "2024-11-14T09:07:17.947Z",
+    "duration": 970,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a66b94fb-d42d-4b41-b0ec-874d4ea896f2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\API TESTING\\Httpsrequest.cy.js",
+      "file": "cypress\\e2e\\API TESTING\\Httpsrequest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c97d73aa-8715-4d82-8ad8-4502df1bad22",
+          "title": "HTTP request",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "POST Call",
+              "fullTitle": "HTTP request POST Call",
+              "timedOut": null,
+              "duration": 808,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: \"POST\",\n  url: \"https://gorest.co.in/public/v2/users\",\n  headers: {\n    authorization: \"Bearer\" + accessToken\n  },\n  body: {\n    name: \"mango\",\n    email: \"gayu1@gmail.com\",\n    gender: \"male\",\n    status: \"active\"\n  }\n}).then(res => {\n  cy.log(JSON.stringify(res));\n  expect(res.status).to.eq(201);\n  expect(res.body).has.property(\"email\", \"gayu1@gmail.com\");\n  expect(res.body).has.property(\"status\", \"active\");\n});",
+              "err": {
+                "message": "CypressError: `cy.request()` failed on:\n\nhttps://gorest.co.in/public/v2/users\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://gorest.co.in/public/v2/users\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"authorization\": \"Bearer77054797b26f3ba82323dad211a1cc4024c9b8481b3b3df6c5ffcd9f79947b6a\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/13.15.2 Chrome/118.0.5993.159 Electron/27.3.10 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 76\n}\nBody: {\"name\":\"mango\",\"email\":\"gayu1@gmail.com\",\"gender\":\"male\",\"status\":\"active\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 401 - Unauthorized\nHeaders: {\n  \"date\": \"Thu, 14 Nov 2024 09:07:18 GMT\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"35\",\n  \"connection\": \"keep-alive\",\n  \"cache-control\": \"no-cache\",\n  \"referrer-policy\": \"strict-origin-when-cross-origin\",\n  \"vary\": \"Origin\",\n  \"x-content-type-options\": \"nosniff\",\n  \"x-download-options\": \"noopen\",\n  \"x-frame-options\": \"SAMEORIGIN\",\n  \"x-permitted-cross-domain-policies\": \"none\",\n  \"x-request-id\": \"13c2c4d2-44a5-4a37-973c-91a4ad1b2943\",\n  \"x-runtime\": \"0.025131\",\n  \"x-xss-protection\": \"0\",\n  \"cf-cache-status\": \"DYNAMIC\",\n  \"report-to\": \"{\\\"endpoints\\\":[{\\\"url\\\":\\\"https:\\\\/\\\\/a.nel.cloudflare.com\\\\/report\\\\/v4?s=fDTEV2ImeIOZtzlDNusrdaZjgSOAmkT8kzB1yUKoVbYlU0SQHSJ7qtKMc53VArISPDx2SsUxNiQtVWh0V2mD0uFU9rcloy5IhcD1l0VCZAzW5j8HuyGztI0GWDUFVFc%3D\\\"}],\\\"group\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"nel\": \"{\\\"success_fraction\\\":0,\\\"report_to\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"server\": \"cloudflare\",\n  \"cf-ray\": \"8e25d9b67df08368-SIN\",\n  \"alt-svc\": \"h3=\\\":443\\\"; ma=86400\",\n  \"server-timing\": \"cfL4;desc=\\\"?proto=TCP&rtt=32035&sent=12&recv=11&lost=0&retrans=0&sent_bytes=6028&recv_bytes=2083&delivery_rate=135555&cwnd=256&unsent_bytes=0&cid=df2a26d8b03a4543&ts=9811&x=0\\\"\"\n}\nBody: {\n  \"message\": \"Authentication failed\"\n}\n\n\nhttps://on.cypress.io/request",
+                "estack": "CypressError: `cy.request()` failed on:\n\nhttps://gorest.co.in/public/v2/users\n\nThe response we received from your web server was:\n\n  > 401: Unauthorized\n\nThis was considered a failure because the status code was not `2xx` or `3xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n\n-----------------------------------------------------------\n\nThe request we sent was:\n\nMethod: POST\nURL: https://gorest.co.in/public/v2/users\nHeaders: {\n  \"Connection\": \"keep-alive\",\n  \"authorization\": \"Bearer77054797b26f3ba82323dad211a1cc4024c9b8481b3b3df6c5ffcd9f79947b6a\",\n  \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/13.15.2 Chrome/118.0.5993.159 Electron/27.3.10 Safari/537.36\",\n  \"accept\": \"*/*\",\n  \"accept-encoding\": \"gzip, deflate\",\n  \"content-type\": \"application/json\",\n  \"content-length\": 76\n}\nBody: {\"name\":\"mango\",\"email\":\"gayu1@gmail.com\",\"gender\":\"male\",\"status\":\"active\"}\n\n-----------------------------------------------------------\n\nThe response we got was:\n\nStatus: 401 - Unauthorized\nHeaders: {\n  \"date\": \"Thu, 14 Nov 2024 09:07:18 GMT\",\n  \"content-type\": \"application/json; charset=utf-8\",\n  \"content-length\": \"35\",\n  \"connection\": \"keep-alive\",\n  \"cache-control\": \"no-cache\",\n  \"referrer-policy\": \"strict-origin-when-cross-origin\",\n  \"vary\": \"Origin\",\n  \"x-content-type-options\": \"nosniff\",\n  \"x-download-options\": \"noopen\",\n  \"x-frame-options\": \"SAMEORIGIN\",\n  \"x-permitted-cross-domain-policies\": \"none\",\n  \"x-request-id\": \"13c2c4d2-44a5-4a37-973c-91a4ad1b2943\",\n  \"x-runtime\": \"0.025131\",\n  \"x-xss-protection\": \"0\",\n  \"cf-cache-status\": \"DYNAMIC\",\n  \"report-to\": \"{\\\"endpoints\\\":[{\\\"url\\\":\\\"https:\\\\/\\\\/a.nel.cloudflare.com\\\\/report\\\\/v4?s=fDTEV2ImeIOZtzlDNusrdaZjgSOAmkT8kzB1yUKoVbYlU0SQHSJ7qtKMc53VArISPDx2SsUxNiQtVWh0V2mD0uFU9rcloy5IhcD1l0VCZAzW5j8HuyGztI0GWDUFVFc%3D\\\"}],\\\"group\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"nel\": \"{\\\"success_fraction\\\":0,\\\"report_to\\\":\\\"cf-nel\\\",\\\"max_age\\\":604800}\",\n  \"server\": \"cloudflare\",\n  \"cf-ray\": \"8e25d9b67df08368-SIN\",\n  \"alt-svc\": \"h3=\\\":443\\\"; ma=86400\",\n  \"server-timing\": \"cfL4;desc=\\\"?proto=TCP&rtt=32035&sent=12&recv=11&lost=0&retrans=0&sent_bytes=6028&recv_bytes=2083&delivery_rate=135555&cwnd=256&unsent_bytes=0&cid=df2a26d8b03a4543&ts=9811&x=0\\\"\"\n}\nBody: {\n  \"message\": \"Authentication failed\"\n}\n\n\nhttps://on.cypress.io/request\n    at <unknown> (http://localhost:62533/__cypress/runner/cypress_runner.js:132719:72)\n    at tryCatcher (http://localhost:62533/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:62533/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:62533/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:62533/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:62533/__cypress/runner/cypress_runner.js:1701:18)\n    at _drainQueueStep (http://localhost:62533/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:62533/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:62533/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:62533/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/API TESTING/Httpsrequest.cy.js:32:7)",
+                "diff": null
+              },
+              "uuid": "f1ccf87d-0731-4cb7-96a6-49e4fd2b8bc7",
+              "parentUUID": "c97d73aa-8715-4d82-8ad8-4502df1bad22",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "f1ccf87d-0731-4cb7-96a6-49e4fd2b8bc7"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 808,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

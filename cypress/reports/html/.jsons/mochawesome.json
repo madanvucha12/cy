@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-14T09:05:09.364Z",
+    "end": "2024-11-14T09:05:25.465Z",
+    "duration": 16101,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "68289eee-1b32-4d8d-bbfd-db4a1104054c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Assetion.cy.js",
+      "file": "cypress\\e2e\\Assetion.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "57bb81a6-dbf0-486e-8735-b4fffee0a404",
+          "title": "Amazon Login Page Assertions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should have the email input field visible",
+              "fullTitle": "Amazon Login Page Assertions should have the email input field visible",
+              "timedOut": null,
+              "duration": 8459,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//implicit assertion\ncy.get(\"#ap_email\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "82bf5fea-af39-47ba-8efb-0df5f1e502d5",
+              "parentUUID": "57bb81a6-dbf0-486e-8735-b4fffee0a404",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should show the \"Continue\" button",
+              "fullTitle": "Amazon Login Page Assertions should show the \"Continue\" button",
+              "timedOut": null,
+              "duration": 1434,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Explicit Assertion\ncy.get(\"#continue\").should(\"exist\").and(\"contain\", \"Continue\");",
+              "err": {},
+              "uuid": "59dedb4f-01b9-46b5-ade4-44b6afda7906",
+              "parentUUID": "57bb81a6-dbf0-486e-8735-b4fffee0a404",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "82bf5fea-af39-47ba-8efb-0df5f1e502d5",
+            "59dedb4f-01b9-46b5-ade4-44b6afda7906"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9893,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
